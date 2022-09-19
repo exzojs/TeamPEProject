@@ -75,10 +75,10 @@ public class GameStore {
      */
     public int getSumPlayedTime() {
         int sum = 0;
-        for (String name : playedTime.keySet()) {
-            sum += playedTime.get(name);
+        for (String playerName : playedTime.keySet()) {
+            sum += playedTime.get(playerName);
         }
-        return sum;
+        return sum;  
     }
 }
 

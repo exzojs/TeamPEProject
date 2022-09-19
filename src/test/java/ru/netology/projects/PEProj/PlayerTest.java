@@ -47,8 +47,8 @@ public class PlayerTest {
         player.installGame(game3);
 
         player.play(game, 3);
-        player.play(game2,50);
-        player.play(game3,100);
+        player.play(game2, 50);
+        player.play(game3, 100);
 
         int expected = 150;
         int actual = player.sumGenre("MOBA");
@@ -62,7 +62,6 @@ public class PlayerTest {
         Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
 
         Player player = new Player("Petya");
-        player.play(game,3);
 
         assertThrows(RuntimeException.class, () -> {
             player.play(game, 3);
@@ -83,8 +82,8 @@ public class PlayerTest {
         player.installGame(game3);
 
         player.play(game, 3);
-        player.play(game2,50);
-        player.play(game3,100);
+        player.play(game2, 50);
+        player.play(game3, 100);
 
         Game expected = game3;
         Game actual = player.mostPlayerByGenre("MOBA");
